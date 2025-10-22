@@ -21,13 +21,16 @@
 
   <!-- Windows-specific packages -->
   <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
-    <PackageReference Include="GTMH" Version="1.1.5" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
     <!--<PackageReference Include="Serilog.Sinks.EventLog" Version="4.0.0" />-->
   </ItemGroup>
     <!-- Linux-specific packages (if needed) -->
   <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
     <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GTMH" Version="1.1.5" />
   </ItemGroup>
 
   <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
