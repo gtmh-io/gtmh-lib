@@ -23,9 +23,9 @@ public sealed class Cipher
 
   public ReadOnlyMemory<byte> EncryptedData { get; }
 
-  private Cipher(byte[] encryptedData)
+  public Cipher(byte[] encryptedData)
   {
-    EncryptedData = encryptedData;
+    EncryptedData = encryptedData.ToArray();
   }
 
   /// <summary>

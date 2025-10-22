@@ -7,5 +7,6 @@ namespace GTMH.Security
   public interface IDecryptor
   {
     string Decrypt(string a_Encrypted);
+    byte [] Decrypt(byte [] a_Encrypted);
   }
 }

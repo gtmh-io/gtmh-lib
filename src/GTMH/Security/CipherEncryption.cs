@@ -26,6 +26,14 @@ namespace GTMH.Security
       return cipher.DecryptString(Secret);
 #pragma warning restore 8602
     }
+
+    public byte[] Decrypt(byte[] a_Encrypted)
+    {
+      return new Cipher(a_Encrypted).Decrypt(Secret);
+    }
+
     public string Encrypt(string a_PlainText) => Cipher.Encrypt(a_PlainText, Secret).ToString();
+
+    public byte[] Encrypt(byte [] a_Bytes) => Cipher.Encrypt(a_Bytes, Secret).EncryptedData.ToArray();
   }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CipherEncryptor", "Tools\Ci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTMH.DI", "GTMH.DI\GTMH.DI.csproj", "{60FB0247-15C6-4712-8458-780914F36365}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEncryptor", "Tools\FileEncryptor\FileEncryptor.csproj", "{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,11 +73,27 @@ Global
 		{60FB0247-15C6-4712-8458-780914F36365}.Release|x64.Build.0 = Release|Any CPU
 		{60FB0247-15C6-4712-8458-780914F36365}.Release|x86.ActiveCfg = Release|Any CPU
 		{60FB0247-15C6-4712-8458-780914F36365}.Release|x86.Build.0 = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|x64.Build.0 = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Debug|x86.Build.0 = Debug|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|x64.ActiveCfg = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|x64.Build.0 = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|x86.ActiveCfg = Release|Any CPU
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{056BBD48-6DCD-4C15-A382-09923A7517A4} = {07C2787E-EAC7-C090-1BA3-A61EC2A24D84}
+		{8FE705FA-1F74-1AEF-BA33-A678F6131B1D} = {07C2787E-EAC7-C090-1BA3-A61EC2A24D84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FB66AED-39B0-42BF-9668-DA58AABFECED}
 	EndGlobalSection
 EndGlobal
