@@ -26,7 +26,7 @@ jobs:
       run: dotnet build src -c Release --no-restore
     
     - name: Run tests
-      run: dotnet test src --no-build --verbosity normal
+      run: dotnet test --solution src --no-build --verbosity normal
 
     - name: Pack NuGet packages
       run: dotnet pack src -c Release --output ./nupkgs
