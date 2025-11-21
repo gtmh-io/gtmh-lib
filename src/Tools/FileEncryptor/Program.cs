@@ -32,16 +32,17 @@ try
 {
   var input_data = System.IO.File.ReadAllBytes(input);
   byte[] output_data;
+  var encryptor = new CipherEncryption(secret);
   switch(args.GetCmdLine("action", "unspecified").ToLower())
   {
     case "encrypt":
     {
-      output_data = Cipher.Encrypt(input_data, secret).EncryptedData.ToArray();
+      output_data = encryptor.Encrypt(input_data);
       break;
     }
     case "decrypt":
     {
-      output_data = new Cipher(input_data).Decrypt(secret);
+      output_data = encryptor.Decrypt(input_data);
       break;
     }
     default:
