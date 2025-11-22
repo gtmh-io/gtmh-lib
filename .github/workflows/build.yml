@@ -26,7 +26,8 @@ jobs:
       run: dotnet build src -c Release --no-restore
     
     - name: Run tests
-      run: dotnet test --solution src --no-build --verbosity normal
+      #run: dotnet test --solution src --no-build --verbosity normal
+      run: for D in $(find src -type d -a -name '*UnitTests'); do dotnet run -c Release --no-build --project $D; done
 
     - name: Pack NuGet packages
       run: dotnet pack src -c Release --output ./nupkgs
