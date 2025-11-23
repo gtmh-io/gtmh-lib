@@ -9,7 +9,7 @@
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.1.4</Version>
+    <Version>1.1.88</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GTMH" Version="1.1.6" />
+    <PackageReference Include="GTMH" Version="*" />
   </ItemGroup>
 
   <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
